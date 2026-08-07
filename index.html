@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arpan Christian | Software &amp; Web Developer</title>
+  <meta name="description" content="Arpan Christian — Aspiring Software Developer, Web Developer and SQL Enthusiast. Portfolio featuring projects in Java, JavaScript, SQL and modern web technologies.">
+  <meta name="keywords" content="Arpan Christian, Software Developer, Web Developer, Java, JavaScript, SQL, Portfolio">
+  <meta name="author" content="Arpan Christian">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arpan Christian | Software &amp; Web Developer">
+  <meta property="og:description" content="Aspiring Software Developer | Web Developer | SQL Enthusiast">
+  <meta property="og:type" content="website">
+
+  <!-- Font Awesome (icons only — no Google Fonts used) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= SCROLL PROGRESS BAR ================= -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#hero" class="logo" aria-label="Arpan Christian — Home">
+        <span class="logo-bracket">&lt;</span>Arpan<span class="logo-accent">.</span>Christian<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle light and dark mode" title="Toggle theme">
+          <i class="fa-solid fa-moon" id="themeIcon" aria-hidden="true"></i>
+        </button>
+        <button id="navToggle" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section id="hero" class="hero">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow"><span class="dot"></span> Available for internships &amp; freelance work</p>
+          <h1 class="hero-name">Arpan Christian</h1>
+          <p class="hero-tagline">
+            <span id="typedRole" class="typed-role"></span><span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-intro">
+            I'm a software development student who enjoys turning real-world problems into clean,
+            working code. I build with Java, JavaScript and SQL, ship practical projects end‑to‑end,
+            and I'm always looking for the next thing to learn.
+          </p>
+          <div class="hero-actions">
+            <a href="assets/resume.pdf" class="btn btn-primary" download>
+              <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-paper-plane" aria-hidden="true"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="#" class="social-icon" aria-label="GitHub profile" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn profile" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:arpanchristian2020@gmail.com" class="social-icon" aria-label="Send an email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-card" role="img" aria-label="Terminal window showing a short introduction script">
+            <div class="terminal-titlebar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title">about-me.js</span>
+            </div>
+            <div class="terminal-body">
+<pre><code><span class="tok-key">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-prop">name</span>: <span class="tok-str">"Arpan Christian"</span>,
+  <span class="tok-prop">role</span>: <span class="tok-str">"Software Developer"</span>,
+  <span class="tok-prop">stack</span>: [<span class="tok-str">"Java"</span>, <span class="tok-str">"JavaScript"</span>, <span class="tok-str">"SQL"</span>],
+  <span class="tok-prop">learning</span>: <span class="tok-boolean">true</span>,
+  <span class="tok-prop">focus</span>: <span class="tok-str">"building real things"</span>
+};</code></pre>
+            </div>
+          </div>
+          <div class="profile-orb">
+            <div class="profile-placeholder" aria-label="Profile picture placeholder">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section">
+      <p class="section-eyebrow">// about</p>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a passionate software development student building a strong foundation in
+            <strong>Java, JavaScript, SQL, HTML and CSS</strong>, along with the tools that make
+            modern development possible — <strong>Git, GitHub, VS Code and MySQL</strong>. My goal
+            is simple: understand problems deeply and write code that solves them cleanly.
+          </p>
+          <p>
+            I enjoy the process of building practical, real-world projects — from database-driven
+            applications to responsive web interfaces — because that's where theory turns into
+            actual, usable software. Every project is a chance to get more comfortable with the
+            full development cycle: planning, building, debugging and refining.
+          </p>
+          <p>
+            I'm continuously improving my skills through hands-on practice, and I'm looking for
+            opportunities — internships, placements or freelance work — where I can contribute,
+            learn from experienced developers, and grow into a well-rounded software engineer.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+              <span>Clean, readable code</span>
+            </div>
+            <div class="highlight">
+              <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+              <span>Practical, real-world projects</span>
+            </div>
+            <div class="highlight">
+              <i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i>
+              <span>Always learning, always improving</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-count="5">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="10">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="100">0</span>
+            <span class="stat-label">% Committed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section section-alt">
+      <p class="section-eyebrow">// skills</p>
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">Technologies and tools I use to build and ship software.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3 class="skill-card-title"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Programming Languages</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Java</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>JavaScript</span><span class="skill-percent">75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>SQL</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="85"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-card-title"><i class="fa-solid fa-code" aria-hidden="true"></i> Web Development</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>HTML5</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>CSS3</span><span class="skill-percent">85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Responsive Web Design</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="80"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-card-title"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Tools</h3>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Git</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>GitHub</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>VS Code</span><span class="skill-percent">90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>MySQL</span><span class="skill-percent">80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-percent="80"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section">
+      <p class="section-eyebrow">// projects</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-subtitle">A selection of things I've built while learning and experimenting.</p>
+
+      <div class="project-filters" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <article class="project-card" data-category="ml">
+          <div class="project-image">
+            <i class="fa-solid fa-house-chimney" aria-hidden="true"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">House Price Prediction</h3>
+            <p class="project-desc">
+              A machine learning model that predicts housing prices from historical data, using
+              regression techniques to uncover the features that influence price the most.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Machine Learning</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-image">
+            <i class="fa-solid fa-images" aria-hidden="true"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">GalleryX</h3>
+            <p class="project-desc">
+              A responsive image gallery web application with smooth grid layouts, lightbox
+              previews and filtering — built to be fast and easy on every screen size.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="java sql">
+          <div class="project-image">
+            <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Student Management System</h3>
+            <p class="project-desc">
+              A desktop application for managing student records — add, update, search and
+              delete — backed by a MySQL database with a clean Java Swing interface.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">JDBC</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="sql">
+          <div class="project-image">
+            <i class="fa-solid fa-database" aria-hidden="true"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Employee Database Management System</h3>
+            <p class="project-desc">
+              A structured SQL database for managing employee records, departments and payroll,
+              designed with normalized tables and efficient queries for common HR operations.
+            </p>
+            <div class="project-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Database Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <div class="project-image">
+            <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">
+              This very website — a responsive, dark-themed portfolio built from scratch with
+              vanilla HTML, CSS and JavaScript, with no frameworks involved.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="section section-alt">
+      <p class="section-eyebrow">// education</p>
+      <h2 class="section-title">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">20XX — 20XX</span>
+            <h3>Bachelor's Degree in Computer Science / IT</h3>
+            <p>University / College Name Placeholder</p>
+            <p class="timeline-note">Relevant coursework: Data Structures, DBMS, Web Technologies, OOP with Java.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">20XX — 20XX</span>
+            <h3>Higher Secondary Education (12th Grade)</h3>
+            <p>School Name Placeholder</p>
+            <p class="timeline-note">Stream: Science / Computer Science</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">20XX</span>
+            <h3>Secondary Education (10th Grade)</h3>
+            <p>School Name Placeholder</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATES ================= -->
+    <section id="certificates" class="section">
+      <p class="section-eyebrow">// certificates</p>
+      <h2 class="section-title">Certificates</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <i class="fa-solid fa-certificate cert-icon" aria-hidden="true"></i>
+          <h3>Certificate Title Placeholder</h3>
+          <p>Issuing Organization</p>
+          <span class="cert-date">20XX</span>
+        </div>
+        <div class="cert-card">
+          <i class="fa-solid fa-award cert-icon" aria-hidden="true"></i>
+          <h3>Certificate Title Placeholder</h3>
+          <p>Issuing Organization</p>
+          <span class="cert-date">20XX</span>
+        </div>
+        <div class="cert-card">
+          <i class="fa-solid fa-graduation-cap cert-icon" aria-hidden="true"></i>
+          <h3>Certificate Title Placeholder</h3>
+          <p>Issuing Organization</p>
+          <span class="cert-date">20XX</span>
+        </div>
+        <div class="cert-card">
+          <i class="fa-solid fa-medal cert-icon" aria-hidden="true"></i>
+          <h3>Certificate Title Placeholder</h3>
+          <p>Issuing Organization</p>
+          <span class="cert-date">20XX</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="section section-alt">
+      <p class="section-eyebrow">// experience</p>
+      <h2 class="section-title">Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Month 20XX — Month 20XX</span>
+            <h3>Internship / Training Placeholder</h3>
+            <p>Company / Organization Name Placeholder</p>
+            <p class="timeline-note">
+              Placeholder for internship or training details — responsibilities, technologies
+              used and key contributions will go here once available.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Ongoing</span>
+            <h3>Self-Directed Learning &amp; Project Building</h3>
+            <p>Independent</p>
+            <p class="timeline-note">
+              Building practical projects and strengthening core skills in Java, JavaScript,
+              SQL and web development while preparing for internship opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section id="achievements" class="section">
+      <p class="section-eyebrow">// achievements</p>
+      <h2 class="section-title">Achievements</h2>
+
+      <div class="achieve-grid">
+        <div class="achieve-card">
+          <i class="fa-solid fa-trophy achieve-icon" aria-hidden="true"></i>
+          <h3>Achievement Title Placeholder</h3>
+          <p>Short description of the achievement goes here.</p>
+        </div>
+        <div class="achieve-card">
+          <i class="fa-solid fa-star achieve-icon" aria-hidden="true"></i>
+          <h3>Achievement Title Placeholder</h3>
+          <p>Short description of the achievement goes here.</p>
+        </div>
+        <div class="achieve-card">
+          <i class="fa-solid fa-bolt achieve-icon" aria-hidden="true"></i>
+          <h3>Achievement Title Placeholder</h3>
+          <p>Short description of the achievement goes here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section-alt">
+      <p class="section-eyebrow">// contact</p>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-subtitle">Have an opportunity or a question? I'd love to hear from you.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:arpanchristian2020@gmail.com" class="contact-item">
+            <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">arpanchristian2020@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+919313591489" class="contact-item">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 9313591489</span>
+            </div>
+          </a>
+          <a href="#" class="contact-item" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/arpan-christian</span>
+            </div>
+          </a>
+          <a href="#" class="contact-item" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/arpan-christian</span>
+            </div>
+          </a>
+          <div class="contact-item contact-item-static">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">India</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fa-regular fa-paper-plane" aria-hidden="true"></i> Send Message
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-copy">&copy; <span id="year"></span> Arpan Christian. All rights reserved.</p>
+
+      <div class="footer-socials">
+        <a href="#" class="social-icon" aria-label="GitHub profile" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn profile" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:arpanchristian2020@gmail.com" class="social-icon" aria-label="Send an email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+
+      <p class="footer-credit">Designed &amp; Developed by <strong>Arpan Christian</strong></p>
+    </div>
+  </footer>
+
+  <!-- ================= SCROLL TO TOP ================= -->
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
